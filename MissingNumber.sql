@@ -1,7 +1,7 @@
 # Given an increasing sequence of numbers present in a column of a table, certain numbers are missing from the column due to some fauty entries.
 # The goal is to find the missing numbers from the sequence
 
-# Here is te example  with ID field representing an increasing sequence with initial ID as 1:
+# Here is te example table 'animal'  with ID field representing an increasing sequence with initial ID as 1:
 
   ID  | Value    | More fields...
 ---------------------------------
@@ -33,7 +33,7 @@
 
   
 ## Ans: 
-SELECT DISTINCT rating_id+1
-FROM student_rating
-WHERE rating_id+1 NOT IN (SELECT DISTINCT rating_id FROM student_rating) 
-AND rating_id+1<=(select max(rating_id) from student_rating);
+SELECT DISTINCT ID+1
+FROM animal
+WHERE ID+1 NOT IN (SELECT DISTINCT ID FROM animal) 
+AND ID+1<=(select max(ID) from animal);
