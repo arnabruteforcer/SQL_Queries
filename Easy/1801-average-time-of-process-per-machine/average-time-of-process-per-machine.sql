@@ -17,7 +17,7 @@
   
 2) ----- Using self join --------------------
 --- a) Self join the same table on the machine_id and process_id to combine the data of 2 rows 
-  ----into 2 separate columns in 
+  ----into 2 separate columns in same table
 --- b) As there are start and end timestamp for every process the join query has 4 combinations
 ------ the combination of start and end timestamp is considered with activity_type as 'start'
 --- c) The consideration is taking the start_time from the 1st table and end_time from the 2nd table
